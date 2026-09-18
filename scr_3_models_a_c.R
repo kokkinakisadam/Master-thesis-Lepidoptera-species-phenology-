@@ -1019,7 +1019,6 @@ ggplot() +
        Anthocharis cardamines peak, 2016-2019", x = "January max temperature (C)",
        y = "Peak (days)")
 
-#spread out, consider adding random slope ?
 
 
 
