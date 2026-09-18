@@ -21,7 +21,7 @@ library(rpart.plot)
 #1. Data -----------
 eu_chr_ob <- read.csv("Datasets_analysis/eu_chr_obs")
 eu_chr_inat <- read.csv("Data_analysis/eu_chr_inat") 
-eu_chr_all <- rbind(eu_chr_inat, eu_chr_ob) %>% distinct() #problem diff var, why inat 63
+eu_chr_all <- rbind(eu_chr_inat, eu_chr_ob) %>% distinct() 
 
 eu_chr_inat$first_obs <- as.integer(yday(as.Date(eu_chr_inat$first_obs)))
 eu_chr_inat$last_obs <- as.integer(yday(as.Date(eu_chr_inat$last_obs)))
